@@ -1,5 +1,8 @@
 import { useState } from "react";
 
+import searchSvg from "../assets/search.svg";
+
+import { Button } from "../components/Button";
 import { Input } from "../components/Input";
 
 export function Dashboard() {
@@ -23,6 +26,10 @@ export function Dashboard() {
 					placeholder="Pesquisar pelo nome"
 					onChange={(e) => setName(e.target.value)}
 				/>
+
+				<Button variant="icon">
+					<img className="w-5" src={searchSvg} alt="Ícone de pesquisar" />
+				</Button>
 			</form>
 		</div>
 	);
