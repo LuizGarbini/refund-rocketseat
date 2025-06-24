@@ -10,14 +10,14 @@ const isLoading = false;
 
 const session = {
 	user: {
-		role: "employee",
+		role: "",
 	},
 };
 
 export function Routes() {
 	function Route() {
 		switch (session?.user.role) {
-			case "empolyee":
+			case "employee":
 				return <EmployeeRoutes />;
 			case "manager":
 				return <ManagerRoutes />;
